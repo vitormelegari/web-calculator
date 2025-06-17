@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cito's Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div id="calculator-body">
+      <div id="content">
+        <div id="display">
+          <span id="expression-display"></span
+          ><span id="result-display">0</span>
+        </div>
+        <div id="btns-container">
+          <div id="utility-btns">
+            <button class="btn percent" data-action="percentage">%</button>
+            <button class="btn clear-entry" data-action="clear-entry">
+              CE
+            </button>
+            <button class="btn clear-all" data-action="clear-all">C</button>
+            <button class="btn delete" data-action="backspace">⌫</button>
+          </div>
+          <div id="num-pad">
+            <button class="btn" data-type="number" data-value="7">7</button>
+            <button class="btn" data-type="number" data-value="8">8</button>
+            <button class="btn" data-type="number" data-value="9">9</button>
+            <button class="btn" data-type="number" data-value="4">4</button>
+            <button class="btn" data-type="number" data-value="5">5</button>
+            <button class="btn" data-type="number" data-value="6">6</button>
+            <button class="btn" data-type="number" data-value="1">1</button>
+            <button class="btn" data-type="number" data-value="2">2</button>
+            <button class="btn" data-type="number" data-value="3">3</button>
+            <button class="btn toggle-sign" data-action="toggle-sign">
+              +/-
+            </button>
+            <button class="btn" data-type="number" data-value="0">0</button>
+            <button class="btn" data-type="decimal" data-value=".">.</button>
+          </div>
+          <div id="basic-ops">
+            <button class="btn divide" data-type="operator" data-operator="÷">
+              ÷
+            </button>
+            <button class="btn multiply" data-type="operator" data-operator="×">
+              ×
+            </button>
+            <button class="btn subtract" data-type="operator" data-operator="-">
+              −
+            </button>
+            <button class="btn add" data-type="operator" data-operator="+">
+              +
+            </button>
+            <button class="btn equals" data-action="calculate">=</button>
+          </div>
+          <div id="advanced-math">
+            <button class="btn reciprocal" data-operation="1/">1/x</button>
+
+            <button class="btn square" data-operation="sqr">x²</button>
+            <button class="btn sqrt" data-operation="√">²√x</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
